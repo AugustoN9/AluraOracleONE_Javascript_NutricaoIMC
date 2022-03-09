@@ -53,29 +53,27 @@ function calculaImc(peso, altura) {
 }
 
 
-function classificaImc(imc_calculado) {
-
-    var imc_calculado = 'abc';
+function classificaImc(imc) {
 
     var classificado = "";
 
 
-    if (imc_calculado >= 40.00) {
+    if (imc >= 40.00) {
         classificado = "Obecidade Grau III ou Mórbida";
 
-    } else if (imc_calculado >= 35.00 && imc <= 39.90) {
+    } else if (imc >= 35.00 && imc <= 39.90) {
         classificado = "Obecidade Grau II";
 
-    } else if (imc_calculado >= 30.00 && imc <= 34.90) {
+    } else if (imc >= 30.00 && imc <= 34.90) {
         classificado = "Obecidade Grau I";
 
-    } else if (imc_calculado >= 25.00 && imc <= 29.90) {
+    } else if (imc >= 25.00 && imc <= 29.90) {
         classificado = "Sobrepeso";
 
-    } else if (imc_calculado >= 18.50 && imc <= 24.90) {
+    } else if (imc >= 18.50 && imc <= 24.90) {
         classificado = "Peso Normal";
 
-    } else if (imc_calculado < 18.50) {
+    } else if (imc < 18.50) {
         classificado = "Abaixo do Peso";
 
     } else {
